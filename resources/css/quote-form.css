@@ -1,0 +1,439 @@
+/* public/css/admin/quote-form.css */
+
+/* ===== CONTENEUR PRINCIPAL ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7fafc;
+    min-height: 100vh;
+}
+
+/* ===== EN-TÊTE ===== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.page-header h1 {
+    color: #1a365d;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-header .subtitle {
+    color: #718096;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #1a365d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2d4a7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #2d3748;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e0;
+}
+
+.btn-success {
+    background: #38a169;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #2f855a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 161, 105, 0.3);
+}
+
+.btn-danger {
+    background: #e53e3e;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c53030;
+}
+
+/* ===== ALERTES ===== */
+.alert {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.alert-danger {
+    background: #fff5f5;
+    color: #9b2c2c;
+    border: 1px solid #fed7d7;
+}
+
+.alert-danger ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ===== FORMULAIRE ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 18px 25px;
+    background: #f7fafc;
+    border-bottom: 2px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    color: #1a365d;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-header h2 i {
+    color: #2d4a7a;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* ===== GROUPES DE FORMULAIRES ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2d3748;
+    font-size: 14px;
+}
+
+.form-group label .required {
+    color: #e53e3e;
+    margin-left: 3px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #1a365d;
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-group .error-message {
+    color: #e53e3e;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ===== TABLEAU DES PRODUITS ===== */
+.table-container {
+    overflow-x: auto;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items-table thead {
+    background: #f7fafc;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.items-table thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #4a5568;
+}
+
+.items-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.items-table tbody td {
+    padding: 10px 14px;
+    vertical-align: middle;
+}
+
+.items-table tfoot td {
+    padding: 15px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a365d;
+    border-top: 2px solid #1a365d;
+}
+
+.items-table .text-right {
+    text-align: right;
+}
+
+/* ===== CHAMPS DU TABLEAU ===== */
+.items-table input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.items-table input:focus {
+    outline: none;
+    border-color: #1a365d;
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.items-table .item-total {
+    font-weight: 600;
+    color: #1a365d;
+}
+
+.btn-remove {
+    background: #fff5f5;
+    color: #e53e3e;
+    border: none;
+    border-radius: 6px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-remove:hover {
+    background: #fed7d7;
+}
+
+.help-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #718096;
+}
+
+.help-text i {
+    color: #2a69ac;
+}
+
+/* ===== BOUTONS D'ACTION ===== */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.form-actions .btn {
+    padding: 14px 30px;
+    font-size: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .items-table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 22px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-header h2 {
+        font-size: 16px;
+    }
+}
+
+
+.existing-item {
+            background: #f7fafc;
+            border-left: 3px solid #2a69ac;
+            padding: 8px 12px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .existing-item .item-info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .existing-item .item-info span {
+            font-size: 13px;
+            color: #2d3748;
+        }
+        
+        .existing-item .item-info .desc {
+            font-weight: 600;
+            color: #1a365d;
+        }
+        
+        .existing-item .btn-remove-existing {
+            background: #fff5f5;
+            color: #e53e3e;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .existing-item .btn-remove-existing:hover {
+            background: #fed7d7;
+        }
+        
+        .existing-item .btn-remove-existing.active {
+            background: #e53e3e;
+            color: white;
+        }
+        
+        .section-divider {
+            border: none;
+            border-top: 2px dashed #e2e8f0;
+            margin: 20px 0;
+        }
+        
+        .items-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .items-header .count-badge {
+            background: #1a365d;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }

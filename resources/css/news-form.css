@@ -1,0 +1,335 @@
+@import 'tailwindcss';
+
+:root {
+    --bleu-marine: #0C2340;
+    --orange: #D85A30;
+    --blanc: #FFFFFF;
+    --gris-texte: #444444;
+    --gris-clair: #F5F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-clair);
+    min-height: 100vh;
+    /* padding: 50px 20px; */
+}
+
+.form-container {
+    /* max-width: 750px; */
+    margin: 0 auto;
+}
+
+.form-card {
+    background-color: var(--blanc);
+    border-radius: 16px;
+    padding: 45px 50px;
+    box-shadow: 0 10px 30px rgba(12, 35, 64, 0.08);
+}
+
+.form-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--bleu-marine);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-card h1 i {
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+/* Alertes */
+.alert {
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.alert-danger {
+    background-color: #FCEBE8;
+    color: #C0392B;
+    border: 1px solid #F5C6C0;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bleu-marine);
+    margin-bottom: 8px;
+}
+
+.required {
+    color: var(--orange);
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    color: var(--gris-texte);
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--bleu-marine);
+    box-shadow: 0 0 0 4px rgba(12, 35, 64, 0.10);
+}
+
+.error-message {
+    color: #C0392B;
+    font-size: 12.5px;
+    margin-top: 6px;
+}
+
+.help-text {
+    font-size: 12.5px;
+    color: #999999;
+    margin-top: 6px;
+}
+
+/* Toggle "Publier immédiatement" */
+.toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+.toggle-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+
+.toggle-group label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gris-texte);
+    cursor: pointer;
+}
+
+/* Zone d'upload d'images */
+.image-upload-area {
+    border: 2px dashed #D0D5DB;
+    border-radius: 12px;
+    padding: 35px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.image-upload-area:hover {
+    border-color: var(--orange);
+    background-color: rgba(216, 90, 48, 0.03);
+}
+
+.image-upload-area .icon {
+    font-size: 28px;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.image-upload-area p {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--bleu-marine);
+    margin-bottom: 6px;
+}
+
+.image-upload-area .hint {
+    font-size: 12.5px;
+    color: #999999;
+}
+
+.image-preview-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.image-preview-container img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1.5px solid #E0E0E0;
+}
+
+/* Boutons */
+.btn-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 35px;
+}
+
+.btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.btn-success {
+    background-color: var(--orange);
+    color: var(--blanc);
+    box-shadow: 0 8px 20px rgba(216, 90, 48, 0.3);
+}
+
+.btn-success:hover {
+    background-color: #c04d26;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(216, 90, 48, 0.4);
+}
+
+.btn-secondary {
+    background-color: var(--gris-clair);
+    color: var(--gris-texte);
+}
+
+.btn-secondary:hover {
+    background-color: #E5E9EE;
+}
+/* Images existantes (page édition) */
+.existing-images {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.existing-image-item {
+    position: relative;
+    width: 110px;
+}
+
+.existing-image-item img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1.5px solid #E0E0E0;
+}
+
+.order-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: var(--bleu-marine);
+    color: var(--blanc);
+    font-size: 11px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-check {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-color: rgba(229, 62, 62, 0.9);
+    color: var(--blanc);
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.delete-check.active {
+    background-color: #C0392B;
+}
+
+.image-info {
+    margin-top: 6px;
+}
+
+.image-info input[type="text"] {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Bouton danger (supprimer l'actualité) */
+.btn-danger {
+    background-color: transparent;
+    color: #C0392B;
+    border: 1.5px solid #C0392B;
+    flex: 0 0 auto;
+    padding: 14px 24px;
+}
+
+.btn-danger:hover {
+    background-color: #C0392B;
+    color: var(--blanc);
+}

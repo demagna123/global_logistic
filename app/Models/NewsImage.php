@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class NewsImage extends Model
+{
+    protected $fillable = [
+        'news_id',
+        'image_path',
+        'caption',
+        'order'
+    ];
+
+    // Inverse relation with news
+    public function news()
+    {
+        return $this->belongsTo(News::class);
+    }
+}
