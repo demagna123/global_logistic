@@ -14,12 +14,12 @@ class AdminUserSeeder extends Seeder
     public function run(): void
     {
         // Vérifier si l'utilisateur existe déjà
-        $user = User::where('email', 'admin@globallogistics.tg')->first();
+        $user = User::where('email', 'contact@globallogisticsarlu.com')->first();
 
         if (!$user) {
             User::create([
                 'name' => 'Administrateur',
-                'email' => 'nanipobernadine@gmail.com',
+                'email' => 'contact@globallogisticsarlu.com',
                 'password' => 'admin123',
             ]);
 
