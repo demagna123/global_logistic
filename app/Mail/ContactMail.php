@@ -25,7 +25,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('globallogistic@gmail.com', 'Global logistic SARL-U'),
+            from: new Address('contact@globallogisticsarlu.com', 'Global logistic SARL-U'),
             subject: '📩 Nouveau message de contact - ' . $this->contact->fullName,
         );
     }

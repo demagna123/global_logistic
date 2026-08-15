@@ -25,7 +25,7 @@ class ContactReplyMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('globallogistic@gmail.com', 'Global logistic SARL-U'),
+            from: new Address('contact@globallogisticsarlu.com', 'Global logistic SARL-U'),
             subject: ' Votre message a été pris en compte - Global Logistics',
         );
     }
