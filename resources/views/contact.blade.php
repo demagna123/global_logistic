@@ -67,7 +67,7 @@
             </div>
             <div class="coord-item">
                 <i class="fa-solid fa-envelope"></i>
-                <p>contact@globallogistics.tg</p>
+                <p>contact@globallogisticsarlu.com</p>
             </div>
         </div>
     </section>
@@ -171,7 +171,7 @@
             <p class="footer__text"><i class="fa-solid fa-location-dot"></i> Lomé, Togo</p>
             <p class="footer__text" style="font-size: 12px;"><i class="fa-solid fa-inbox"></i> 08BP 80159, Lomé Zone Portuaire</p>
             <p class="footer__text"><i class="fa-solid fa-phone" style="font-size: 10px"></i> +228 90 02 48 75/99 25 15 85</p>
-            <p class="footer__text"><i class="fa-solid fa-envelope"></i> contact@globallogistics.tg</p>
+            <p class="footer__text"><i class="fa-solid fa-envelope"></i> contact@globallogisticsarlu.com</p>
             <p class="footer__text"><i class="fa-solid fa-file-shield"></i>TG N° 20170015</p>
         </div>
         <div class="footerbas">
