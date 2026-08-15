@@ -148,7 +148,7 @@
                 </div>
                 <div class="flip-back">
                     <button class="retour"><i class="fa-solid fa-arrow-left"></i></button>
-                    <img src="/images/services/transport-logistique.jpg" alt="Transport logistique" class="service-card__image-back">
+                    <img src="/images/services/transport-logistique.jpeg" alt="Transport logistique" class="service-card__image-back">
                     <p class="description-back">
                         Nous synchronisons chaque étape entre production et livraison :
                         routier, maritime, multimodal. Traçabilité en temps réel et respect
